@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0F0F1E;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-primary;
+}
+
+.card {
+  @apply relative cursor-pointer;
+}
+
+.card-content {
+  @apply relative z-10 p-4 rounded-lg border border-white/10 bg-dark-card backdrop-blur-sm;
+}
+
+.card-hover-effect:hover .card-content {
+  @apply border-solbeaver-cyan/50;
+}
+
+.shine {
+  @apply absolute inset-0 z-0 scale-[2] opacity-0 transition-opacity duration-500;
+  background: radial-gradient(circle at center, #00F5FF 0%, transparent 70%);
+  mix-blend-mode: soft-light;
+}
+
+.glow {
+  @apply absolute inset-0 z-0 opacity-0 transition-opacity duration-500;
+  box-shadow: 0 0 80px 20px rgba(0, 245, 255, 0.15);
+}
+
+.card-hover-effect:hover .shine,
+.card-hover-effect:hover .glow {
+  @apply opacity-100;
+}

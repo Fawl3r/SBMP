@@ -1,0 +1,22 @@
+{
+  "name": "SolBeaver Market",
+  "short_name": "SolBeaver",
+  "description": "Discover and collect unique digital beavers on Solana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F0F1E",
+  "theme_color": "#0F0F1E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
